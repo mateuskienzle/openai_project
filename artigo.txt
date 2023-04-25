@@ -1,3 +1,7 @@
-As listas em Python são estruturas de dados que permitem armazenar uma coleção ordenada de valores de diferentes tipos, como números inteiros, números reais, strings, booleanos e até outras listas. Ao contrário das strings, que são coleções de caracteres, as listas podem armazenar diferentes tipos de dados e não têm um tamanho específico limitado.
+As listas em Python são estruturas de dados que permitem armazenar uma coleção ordenada de valores de diferentes tipos, 
+como números inteiros, números reais, strings, booleanos e até outras listas. Ao contrário das strings, que são coleções de caracteres, 
+as listas podem armazenar diferentes tipos de dados e não têm um tamanho específico limitado.
 
-Em outras palavras, as listas em Python podem ser comparadas a uma prateleira de armazenamento em uma loja de departamento, onde os itens são organizados em ordem específica e podem ser de tipos diferentes, como roupas, calçados ou eletrônicos. Além disso, assim como podemos adicionar ou remover produtos da prateleira, podemos modificar a lista em Python, tornando-a uma estrutura flexível e dinâmica.
+Em outras palavras, as listas em Python podem ser comparadas a uma prateleira de armazenamento em uma loja de departamento, 
+onde os itens são organizados em ordem específica e podem ser de tipos diferentes, como roupas, calçados ou eletrônicos. 
+Além disso, assim como podemos adicionar ou remover produtos da prateleira, podemos modificar a lista em Python, tornando-a uma estrutura flexível e dinâmica.
