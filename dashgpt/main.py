@@ -2,6 +2,7 @@ from dash import html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
 from dash import dcc
+import pandas as pd
 
 from app import *
 from home import *
@@ -17,8 +18,16 @@ load_dotenv()
 #definicao da chave da API
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+try:
+    df_historico = pd.read_csv('histori.csv', index_col=0)
+except:
+    df_historico = pd.DataFrame(columns=['role', 'message'])
+
+df_historico = df_historico.to_dict()
+
 
 app.layout = dbc.Container([
+    dcc.Store(id='historical_msg_store', data=df_historico, storage_type='memory'),
     dcc.Location(id="url"),
     dbc.Row([
         dbc.Col([
