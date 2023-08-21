@@ -62,7 +62,7 @@ def gerar_resposta(messages):
 
 @app.callback(
     Output('cards_respostas', 'children'),
-    State('mensagem', 'value'),
+    State('msg_user', 'value'),
     Input('botao_search', 'n_clicks'),
     prevent_initial_call=True
 )
@@ -71,6 +71,7 @@ def generateCardsList(mensagem, n):
     cardsList = []
     mensagens = []
     mensagens.append({"role": "user", "content": str(mensagem)})
+    import pdb; pdb.set_trace()
     resposta = gerar_resposta(mensagens)
     card = generate_card(resposta)
     cardsList.append(card)

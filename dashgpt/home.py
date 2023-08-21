@@ -24,13 +24,33 @@ def generate_card(pesquisa):
 
     return cardNovo
 
+def generateCardsList(card_pergunta, card_resposta):
+
+    cardAgrupado = dbc.Row([
+        dbc.Col([
+            dbc.Row([
+                dbc.Col([
+                    card_pergunta
+                ])
+            ]),
+            dbc.Row([
+                dbc.Col([
+                    card_resposta
+                ])
+            ]),
+        ])
+    ]),
+
+    return cardAgrupado
+
+
 
 layout = dbc.Container([
     dbc.Row([
         dbc.Col([
             dbc.Row([
                 dbc.Col([
-                    dbc.Input(id="mensagem", type="text", placeholder="Insira sua pesquisa")
+                    dbc.Input(id="msg_user", type="text", placeholder="Insira sua pesquisa")
                 ], md=10),
                 dbc.Col([
                     dbc.Col([dbc.Button("Pesquisa", id="botao_search")])
